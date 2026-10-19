@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#faf8ff"><title>Little Love Notes · Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+  <main class="admin-shell">
+    <header class="admin-header"><a class="back-link" href="index.html">← Proposal page</a><span class="admin-icon">♡</span></header>
+    <p class="eyebrow">Your little corner</p><h1>Response inbox</h1>
+    <p class="admin-subtitle">When she answers, her note will show up here.</p>
+    <section class="inbox-card" aria-live="polite">
+      <div class="inbox-title"><div><span class="eyebrow">INBOX</span><h2>New responses</h2></div><span class="count-pill" id="responseCount">0</span></div>
+      <div id="responseList"></div>
+      <div id="emptyState" class="empty-state"><div class="empty-heart">♡</div><h3>All quiet for now</h3><p>Her response will appear here when she sends it.</p></div>
+    </section>
+    <section class="settings-card"><div><h2>Personalize the page</h2><p>Add her name whenever you’re ready. It stays in this browser.</p></div><form id="nameForm" class="name-form"><label for="nameInput">Her name</label><div class="input-row"><input id="nameInput" maxlength="32" placeholder="Add a name (optional)"><button class="button button-save" type="submit">Save</button></div><span id="savedMessage" class="saved-message"></span></form></section>
+    <p class="privacy-note">Responses are stored in this browser on this device. To receive them from a live, published site on another device, connect a small backend first.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

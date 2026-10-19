@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffeff0"><title>A little something for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="proposal-page glass-story site-locked">
+  <section class="password-gate" id="passwordGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="password-gate-card">
+      <div class="gate-heart" aria-hidden="true">♡</div>
+      <p class="gate-eyebrow">a tiny secret</p>
+      <h1 id="gateTitle">A little note for you</h1>
+      <p class="gate-copy">Enter the secret code to open it.</p>
+      <form id="passwordForm" class="password-form">
+        <label for="passwordInput">Secret code</label>
+        <input id="passwordInput" type="password" inputmode="text" autocapitalize="characters" autocomplete="off" maxlength="12" placeholder="••••••" required>
+        <button type="submit">Open my note <span aria-hidden="true">♡</span></button>
+        <p class="gate-hint">Need the code? Ask Sid ♡</p>
+      </form>
+      <p class="gate-message" id="gateMessage" aria-live="polite"></p>
+    </div>
+  </section>  <div class="grain" aria-hidden="true"></div><div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Play a little romantic tune"><span class="music-note" aria-hidden="true">♫</span><span id="musicLabel" data-i18n="musicPlay">play our little song</span><span class="music-heart" aria-hidden="true">♡</span></button>
+  <nav class="language-switch" aria-label="Choose language"><button type="button" data-language="en">EN</button><button type="button" data-language="kn">ಕನ್ನಡ</button><button type="button" data-language="hi">हिन्दी</button></nav>
+  <main class="story-flow" id="siteContent" inert aria-hidden="true">
+    <section class="hero story-screen" id="hello" aria-labelledby="hello-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="heroEyebrow">A tiny note from me to you</span></p>
+        <h1 id="hello-title"><span data-i18n="greeting">Hey there,</span><br><span class="greeting-cutie">cutie</span><span class="title-heart">♥</span><small class="hero-name" data-name>Anu aka Jinke Marina</small></h1>
+        <p class="hero-subtitle" data-i18n-html="heroSubtitle">Mumbai to Bengaluru is a little far,<br>so I made you a little corner of the internet. ♡</p>
+        <a class="scroll-button" href="#proposal-flow"><span data-i18n="heroScroll">Open your little story</span> <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Two little cat friends surrounded by hearts and flowers">
+        <span class="orbit orbit-one">✦</span><span class="orbit orbit-two">♡</span><span class="orbit orbit-three">✿</span>
+        <div class="sun-disc"></div><div class="hero-ribbon">made with<br>a little courage</div>
+        <div class="hero-character hero-character-pink" data-tilt><img src="assets/hello-kitty-pink-cutout.png" alt="Hello Kitty in a bright pink bow and outfit"></div>
+        <div class="hero-character hero-character-blue" data-tilt><img src="assets/hello-kitty-blue-cutout.png" alt="Hello Kitty in a blue cap and outfit"></div>
+        <div class="ground-heart">♥</div><span class="art-caption">the hello committee</span>
+      </div>
+      <span class="section-index">01 <i>—</i> <span data-i18n="helloLabel">hello, cutie</span></span>
+    </section>
+
+    <div class="photo-ribbon" aria-label="Her photos in a gently moving ribbon">
+      <div class="photo-ribbon-track" aria-hidden="true">
+        <div class="photo-ribbon-set">
+          <figure class="photo-ribbon-card"><img src="assets/date-photo-her.png" alt=""></figure>
+          <figure class="photo-ribbon-card"><img src="assets/her-mirror.png" alt=""></figure>
+          <figure class="photo-ribbon-card"><img src="assets/her-glasses.png" alt=""></figure>
+          <figure class="photo-ribbon-card"><img src="assets/her-filmcam.webp" alt=""></figure>
+          <figure class="photo-ribbon-card"><img src="assets/her-green-outfit.png" alt=""></figure>
+        </div>
+        <div class="photo-ribbon-set">
+          <figure class="photo-ribbon-card"><img src="assets/date-photo-her.png" alt=""></figure>
+          <figure class="photo-ribbon-card"><img src="assets/her-mirror.png" alt=""></figure>
+          <figure class="photo-ribbon-card"><img src="assets/her-glasses.png" alt=""></figure>
+          <figure class="photo-ribbon-card"><img src="assets/her-filmcam.webp" alt=""></figure>
+          <figure class="photo-ribbon-card"><img src="assets/her-green-outfit.png" alt=""></figure>
+        </div>
+      </div>
+    </div>    <section class="proposal-flow story-screen" id="proposal-flow" aria-labelledby="step-one-title">
+      <div class="glass-panel flow-panel reveal-on-scroll">
+        <div class="flow-progress"><span id="flowStepLabel">01 / 03</span><div><i class="active"></i><i></i><i></i></div></div>
+        <section class="proposal-step is-current" id="stepOne">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="stepOneEyebrow">a tiny question from Mumbai</span></p>
+          <h2 id="step-one-title" data-i18n-html="stepOneTitle">Wanna hang out<br><em>with me?</em></h2>
+          <p class="flow-copy" data-i18n="stepOneCopy">We can start with a call, then plan a Bengaluru day when it works for both of us. ♡</p>
+          <div class="choice-grid"><button class="choice-button" data-next-step="2" data-i18n-html="hangoutYes">Yes, let’s hang out <span>♡</span></button><button class="choice-button choice-soft" data-answer="needs-time" data-i18n="needTime">I need a little time</button></div>
+        </section>
+        <section class="proposal-step" id="stepTwo" hidden>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="stepTwoEyebrow">Bengaluru plans</span></p>
+          <h2 data-i18n-html="stepTwoTitle">Which place in BLR<br><em>should we go?</em></h2>
+          <p class="flow-copy" data-i18n="stepTwoCopy">Pick the vibe. We can decide the exact spot together.</p>
+          <div class="place-options">
+            <button class="place-option" data-place="Cubbon Park"><span>🌳</span><b>Cubbon Park</b><small data-i18n="placeCubbon">a walk &amp; a long chat</small></button>
+            <button class="place-option" data-place="Lalbagh Botanical Garden"><span>🌷</span><b>Lalbagh</b><small data-i18n="placeLalbagh">flowers &amp; a garden stroll</small></button>
+            <button class="place-option" data-place="Bengaluru Palace"><span>🏰</span><b data-i18n="placePalace">Bengaluru Palace</b><small data-i18n="placePalaceCopy">a little royal day out</small></button>
+            <button class="place-option" data-place="Church Street"><span>☕</span><b>Church Street</b><small data-i18n="placeChurch">coffee &amp; cute cafés</small></button>
+          </div>
+          <form class="custom-place-form" id="customPlaceForm"><label for="customPlaceInput" data-i18n="customPlaceLabel">Somewhere else?</label><div class="custom-place-row"><input id="customPlaceInput" maxlength="60" data-i18n-placeholder="customPlacePlaceholder" placeholder="Type a Bengaluru place" required><button type="submit" data-i18n="customPlaceSubmit">Use this place →</button></div></form>
+          <button class="text-back" type="button" data-back-step="1" data-i18n="back">← back</button>
+        </section>
+        <section class="proposal-step" id="stepThree" hidden>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="chosenPlan">your chosen plan:</span> <span id="chosenPlaceLabel">Bengaluru</span></p>
+          <h2 data-i18n-html="stepThreeTitle">It’s a date.<br><em>Are you in?</em></h2>
+          <p class="flow-copy" data-i18n="stepThreeCopy">A little call first, then your Bengaluru pick when we’re both free. No pressure, promise. ♡</p>
+          <div class="final-choice-area"><button class="button button-yes" id="yesButton" data-i18n-html="dateYes">Yes, I’m in! <span>♡</span></button><div class="no-playground" id="noPlayground"><button class="button button-no" id="noButton" type="button" data-i18n="noButton">No 🙈</button></div><button class="text-back" type="button" data-back-step="2" data-i18n="changePlace">← change my place</button><button class="real-no" id="realNoButton" type="button" data-i18n="realNo">Actually, no thanks — that’s okay</button></div>
+        </section>
+        <p class="response-note" id="responseNote" aria-live="polite"></p>
+      </div>
+      <div class="receipt-printer" id="receiptPrinter" hidden>
+        <div class="printer-top"><span data-i18n="printerName">♡ LITTLE DATE PRINTER ♡</span><i></i></div>
+        <article class="receipt-paper" id="receiptPaper">
+          <p class="receipt-brand" data-i18n="receiptBrand">THE LITTLE DATE CO.</p><h3 data-i18n-html="receiptTitle">IT’S A DATE! <span>♥</span></h3><p class="receipt-sub" data-i18n="receiptSub">MUMBAI × BENGALURU · GOOD VIBES ONLY</p>
+          <div class="receipt-rule">✦ · · · · · · · · · · · ✦</div>
+          <div class="receipt-row"><span data-i18n="receiptPick">YOUR PICK</span><b id="receiptPlace">Bengaluru</b></div>
+          <div class="receipt-row"><span data-i18n="receiptLocation">LOCATION</span><b data-i18n="bengaluruLocation">Bengaluru, Karnataka</b></div>
+          <div class="receipt-row"><span data-i18n="receiptFor">FOR</span><b data-name>Anu aka Jinke Marina</b></div>
+          <div class="receipt-row"><span data-i18n="receiptDate">DATE</span><b data-i18n="dateTogether">We’ll pick it together</b></div>
+          <div class="receipt-row"><span data-i18n="receiptTime">TIME</span><b data-i18n="timeTogether">Whenever works for you</b></div>
+          <div class="receipt-rule">· · · · · · · · · · · · · · ·</div>
+          <div class="receipt-row receipt-created"><span data-i18n="receiptPrinted">PRINTED</span><b id="receiptPrintedAt">—</b></div>
+          <div class="receipt-photos" aria-label="Photo spots for the two of you"><div class="receipt-photo-slot receipt-photo-filled"><img class="photo-him" src="assets/date-photo-him-enhanced.png" alt="Him photo"/><small data-i18n="yourPhoto">Him</small></div><div class="receipt-photo-slot receipt-photo-filled"><img src="assets/date-photo-her.png" alt="Her photo"/><small data-i18n="herPhoto">Her</small></div></div>
+          <p class="receipt-thanks" data-i18n-html="receiptThanks">Bring your lovely self.<br>Everything else is negotiable ♡</p><p class="receipt-code" data-i18n="receiptCode">♡ 01 · ONE VERY HAPPY DATE · 01 ♡</p>
+        </article>
+        <div class="printer-base"><span></span><b>☺</b></div>
+      </div>
+      <span class="section-index">02 <i>—</i> the little plan</span>
+    </section>
+  </main>
+  <div class="confetti-layer" id="confetti" aria-hidden="true"></div><script src="app.js"></script>
+</body>
+</html>
